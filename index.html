@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Synergy ERP - Enterprise Resource Planning Software">
+    <meta name="keywords" content="ERP software, resource planning, management, inventory tracking, product management, resource management">
+    <meta name="author" content="Synergy.co">
+
+    <link rel="stylesheet" href="frontend/css/index.css">
+    <link rel="shortcut icon" href="frontend/assets/icons/syn_favicon.ico" type="image/x-icon">
+
+    <title>Synergy | Enterprise Resource Planning</title>
+</head>
+
+<body>
+    <main class="main-container" role="main">
+        
+        <!-- Left container -->
+        <section class="intro-container" aria-labelledby="welcome-heading">
+            <div class="intro-content">
+
+                <img src="frontend/assets/logo/Synergy-Logo.jpg" alt="Synergy Logo" class="logo">
+                <h1 aria-label="welcome-heading">The most trusted software in resource management industries.</h1>
+                <p>Streamline your business' operations with the world's most efficient resource planning solution.</p>
+
+                <div class="feature-list" role="list">
+                    <div class="feature-item" role="listitem">
+                        <span class="icon" aria-hidden="true">✓</span>
+                        <span>Accurate sales forecasting.</span>
+                    </div>
+                    <div class="feature-item" role="listitem">
+                        <span class="icon" aria-hidden="true">✓</span>
+                        <span>Real-time inventory tracking.</span>
+                    </div>
+                    <div class="feature-item" role="listitem">
+                        <span class="icon" aria-hidden="true">✓</span>
+                        <span>Automated workflow management.</span>
+                    </div>
+                    <div class="feature-item" role="listitem">
+                        <span class="icon" aria-hidden="true">✓</span>
+                        <span>Advanced analytics dashboard.</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Right container -->
+        <section class="forms-container" aria-label="Authentication forms">
+            <div class="forms-wrapper">
+
+                <!-- Login forms -->
+                <form class="auth-forms" id="login-form" aria-labelledby="login-heading">
+                    <h2 aria-label="login-heading">Log in to your account</h2>
+
+                    <div class="form-group">
+                        <label for="login-email">Email</label>
+                        <input type="email"
+                               id="login-email"
+                               name="email"
+                               required
+                               aria-required="true"
+                               autocomplete="email"
+                        >
+                        <label for="login-password">Password</label>
+                        <input type="password"
+                               id="login-password"
+                               name="password"
+                               required
+                               aria-required="true"
+                               autocomplete="current-password"
+                        >
+                    </div>
+
+                    <div class="form-options">
+                        <label class="remember-me" >
+                            <input type="checkbox" class="rememberMe" name="remember">
+                            Remember me
+                        </label>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+
+                    <button type="submit" class="btn-primary">
+                        Log in
+                    </button>
+                </form>
+
+                <!-- Sign up forms -->
+                <form id="signup-forms" class="auth-forms hidden" aria-labelledby="signup-heading">
+                    <h2 id="signup-heading">Create Account</h2>
+
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text"
+                               id="first-name"
+                               name="first-name"
+                               required
+                               aria-required="true"
+                               autocomplete="first-name"
+                        >
+                        <label for="last-name">Last Name</label>
+                        <input type="text"
+                               id="last-name"
+                               name="last-name"
+                               required
+                               aria-required="true"
+                               autocomplete="last-name"
+                        >
+                        <label for="signup-email">Email</label>
+                        <input type="email"
+                               id="signup-email"
+                               name="signup-email"
+                               required
+                               aria-required="true"
+                               autocomplete="email"
+                        >
+                        <label for="signup-password">Password</label>
+                        <input type="password"
+                               id="signup-password"
+                               name="signup-password"
+                               required
+                               aria-required="true"
+                        >
+                        <label for="confirm-signup-password">Confirm Password</label>
+                        <input type="password"
+                               id="confirm-signup-password"
+                               name="confirm-signup-password"
+                               required
+                               aria-required="true"
+                        >
+                    </div>
+
+                    <button type="submit" class="btn-primary">Create Account</button>
+
+                </form>
+
+                <div class="form-switch" role="group" aria-label="Switch between forms">
+                    <p id="switchText">
+                        Don't have an account?
+                        <button
+                                type="button"
+                                class="switch-btn"
+                                aria-controls="loginForm signupForm">
+                            Create an account
+                        </button>
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>
